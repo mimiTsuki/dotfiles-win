@@ -1,9 +1,11 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+eval source <(/home/linuxbrew/.linuxbrew/Cellar/starship/0.58.0/bin/starship init zsh --print-full-init)
+
+SCRIPT_DIR=$HOME/dotfiles
+
+source $SCRIPT_DIR/zsh/plugins.zsh
+source $SCRIPT_DIR/zsh/config.zsh
+source $SCRIPT_DIR/zsh/alias.zsh
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
@@ -26,10 +28,4 @@ zinit light-mode for \
     zinit-zsh/z-a-patch-dl \
     zinit-zsh/z-a-bin-gem-node
 
-### register
-
-SCRIPT_DIR=$HOME/dotfiles
-
-source $SCRIPT_DIR/zsh/plugins.zsh
-source $SCRIPT_DIR/zsh/config.zsh
-source $SCRIPT_DIR/zsh/p10k.zsh
+### End of Zinit's installer chunk

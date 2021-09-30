@@ -1,6 +1,3 @@
-# powerlevel10k
-zinit ice depth=1; zinit light romkatv/powerlevel10k
-
 # fast-syntax-highlighting
 zinit light zdharma/fast-syntax-highlighting
 
@@ -12,7 +9,6 @@ bindkey '^j' autosuggest-accept
 zinit ice as"program" from"gh-r" mv"bat* -> bat" pick"bat/bat"
 zinit light sharkdp/bat
 
-# bat_alias
-if builtin command -v bat > /dev/null; then
-  alias cat="bat"
-fi
+# exa
+zinit ice as"program" from"gh-r" mv"exa* -> exa"
+zinit light ogham/exa

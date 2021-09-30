@@ -22,4 +22,3 @@ zstyle ':completion:*:default' menu select=2
 
 # ディレクトリ名のみ入力されたときにもcdする
 setopt auto_cd
-
