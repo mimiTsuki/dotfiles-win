@@ -1,15 +1,28 @@
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
 
-scoop bucket add extras
-scoop install git
 scoop install aria2
-scoop install vcredist2019
-scoop install googlechrome vscode winmerge
-scoop install gzip less tar gawk sed nvm
-
+scoop install git
+scoop bucket add extras
 scoop bucket add nonportable
-scoop install google-japanese-input-np
+scoop install vcredist2019
+
+scoop update *
+
+$PACKAGES = @(
+    uutils-coreutils
+    gzip
+    less
+    tar
+    gawk
+    sed
+    nvm
+    google-japanese-input-np
+    googlechrome
+    vscode
+    winmerge
+)
+scoop install $PACKAGES
 
 # 趣味
 
