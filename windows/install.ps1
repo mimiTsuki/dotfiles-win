@@ -21,6 +21,7 @@ $PACKAGES = @(
     googlechrome
     vscode
     winmerge
+    vlc
 )
 scoop install $PACKAGES
 
