@@ -5,6 +5,7 @@ scoop install aria2
 scoop install git
 scoop bucket add extras
 scoop bucket add nonportable
+scoop bucket add java
 scoop install vcredist2019
 
 # 無効化方法 scoop config aria2-enabed false
