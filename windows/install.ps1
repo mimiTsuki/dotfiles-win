@@ -7,6 +7,9 @@ scoop bucket add extras
 scoop bucket add nonportable
 scoop install vcredist2019
 
+# 無効化方法 scoop config aria2-enabed false
+scoop config aria2-enabed true
+
 scoop update *
 
 $PACKAGES = @(
@@ -24,7 +27,3 @@ $PACKAGES = @(
     vlc
 )
 scoop install $PACKAGES
-
-# 趣味
-
-scoop install streamlabs-obs
