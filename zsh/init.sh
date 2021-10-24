@@ -1,10 +1,8 @@
 cd ~/
 
-sudo apt-get install git
-
 git clone https://github.com/mimiTsuki/dotfiles.git
 
-ln dotfiles/linux/.zshrc ~/.zshrc
+ln dotfiles/zsh/.zshrc ~/.zshrc
 
 # homebrewのインストール
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
