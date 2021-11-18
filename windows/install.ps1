@@ -22,9 +22,5 @@ $PACKAGES = @(
     sed
     nvm
     google-japanese-input-np
-    googlechrome
-    vscode
-    winmerge
-    vlc
 )
 scoop install $PACKAGES
