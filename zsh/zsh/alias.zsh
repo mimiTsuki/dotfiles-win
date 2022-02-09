@@ -16,3 +16,4 @@ if [[ $(command -v exa) ]]; then
   alias lta=eta
   alias l='clear && ls'
 fi
+alias dp='docker ps | tail -n +2 | peco | awk '\''{print $1}'\'''
